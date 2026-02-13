@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="CSS.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">Thabiso Thabethe</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Me.html">About Me</a></li>
+        <li><a href="My Projects.html">Projects</a></li>
+        <li><a href="Contact Me.html">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<main class="page">
+
+  <section class="contact-header">
+    <h1>Contact Me</h1>
+    <p>
+      If you would like to get in touch, feel free to send me a message
+      using the form below.
+    </p>
+  </section>
+
+  <br></br>
+
+  <form action="https://formspree.io/f/xgovgqwa" method="POST">
+
+  <label>
+    Name
+    <input type="text" name="name" required>
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    Message
+    <textarea name="message" rows="6" required></textarea>
+  </label>
+
+  <button type="submit">Send Message</button>
+
+</form>
+</main>
+<footer class="site-footer">
+  <p>© <span id="year"></span> Thabiso Thabethe. All rights reserved.</p>
+</footer>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
